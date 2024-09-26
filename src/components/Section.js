@@ -6,8 +6,8 @@ import Latex from 'react-latex-next';
 
 function Section({ id, title, content }) {
   return (
-    <div id={id} className="mb-16">
-      <h2 className="text-3xl font-bold mb-6">{title}</h2>
+<div id={id} className="mb-16 sm:mb-12 scroll-mt-10 sm:scroll-mt-8 md:scroll-mt-12">
+<h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">{title}</h2>
 
       <div className="space-y-6">
         {content.map((item, index) => {

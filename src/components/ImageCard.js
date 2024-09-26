@@ -31,13 +31,13 @@ function ImageCard({ title, imageUrl, isSingleImage }) {
       >
         {/* Conditional aspect ratio container for multiple images */}
         <div className={`relative w-full ${!isSingleImage ? 'pb-[80%]' : ''}`}>
-          {/* Image with hover effect */}
+          {/* Insert the img element here */}
           <img
             src={imageUrl}
             alt={title}
             className={`${
               isSingleImage
-                ? 'w-full h-auto object-cover rounded-lg border-2 border-white'
+                ? 'w-full max-w-full h-auto object-cover rounded-lg border-2 border-white'
                 : 'absolute top-0 left-0 w-full h-full object-cover rounded-lg border-2 border-white'
             } transition-transform duration-300 ${isHovered ? 'scale-105 brightness-75' : ''}`}
           />
